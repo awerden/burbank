@@ -44,7 +44,7 @@ export default function Home() {
               <div className="bg-blue-50/50 backdrop-blur-sm p-6 rounded-lg">
                 <h2 className="text-xl font-semibold mb-3">Important Dates</h2>
                 <p>
-                  We're planning for either September/October 2025 or March/April 2026. Check the schedule page for more details.
+                  We are planning for either September/October 2025 or March/April 2026. Check the schedule page for more details.
                 </p>
               </div>
             </div>

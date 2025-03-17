@@ -11,29 +11,28 @@ export default function JotForm({ formId, height = 539 }: JotFormProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    const container = containerRef.current;
+    if (!container) return;
 
-    // Only append the script if the container is empty
-    if (containerRef.current.childNodes.length === 0) {
+    if (container.childNodes.length === 0) {
       const script = document.createElement('script');
       script.src = `https://form.jotform.com/jsform/${formId}`;
       script.async = true;
-      containerRef.current.appendChild(script);
+      container.appendChild(script);
     }
 
     return () => {
-      // Remove all children from container on unmount
-      if (containerRef.current) {
-        containerRef.current.innerHTML = '';
+      if (container) {
+        container.innerHTML = '';
       }
     };
   }, [formId]);
 
   return (
-    <div
+    <div 
       id={`jotform-${formId}`}
       ref={containerRef}
-      style={{ width: '100%', height: '100%' }}
+      style={{ width: '100%', height: `${height}px` }}
     />
   );
 }
