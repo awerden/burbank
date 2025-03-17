@@ -19,7 +19,6 @@ export default function Home() {
       {/* Content container */}
       <div className="relative flex items-center justify-center min-h-screen pt-16">
         <div className="relative z-10 max-w-4xl mx-auto p-8">
-          {/* Added text-black here so all descendant text will be black */}
           <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-lg p-8 text-black">
             <h1 className="text-4xl font-bold mb-6 text-center">
               Burbank GA Retreat
@@ -45,7 +44,7 @@ export default function Home() {
               <div className="bg-blue-50/50 backdrop-blur-sm p-6 rounded-lg">
                 <h2 className="text-xl font-semibold mb-3">Important Dates</h2>
                 <p>
-                  We are planning for either September/October 2025 or March/April 2026. Check the schedule page for more details.
+                  We&apos;re planning for either September/October 2025 or March/April 2026. Check the schedule page for more details.
                 </p>
               </div>
             </div>
