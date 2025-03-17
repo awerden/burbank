@@ -9,7 +9,7 @@ const JotForm = dynamic(() => import('./JotForm'), {
 
 export default function FormWrapper() {
   return (
-    <div style={{ margin: 0, padding: 0, overflow: 'hidden' }}>
+    <div style={{ margin: 0, padding: 0 }}>
       <JotForm formId="250736232252147" height={800} />
     </div>
   );

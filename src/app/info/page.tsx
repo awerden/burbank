@@ -22,7 +22,7 @@ export default function InfoPage() {
           {/* Semi-transparent white box with black text */}
           <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-lg p-8 text-black">
             <h1 className="text-3xl font-bold mb-6 text-center">
-              Retreat Schedule
+              Retreat Info
             </h1>
             <p className="text-lg text-center mb-6">
               Please fill out the pre-retreat survey first
